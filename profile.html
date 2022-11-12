@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="cube.css">
+    <title>Profile</title>
+</head>
+<body style="background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKMG_EeEBEp3pRbajrX4ox2qYiONRinA044g&usqp=CAU);
+             background-size: cover;
+             background-repeat: no-repeat;">
+    
+    
+    <nav class="decoration-rose-400 bg-pink-900 text-white flex justify-between" class="navigation">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" class="w-14 px-2 py-3">
+        
+        <ul class="px-44 py-4 flex space-x-11 justify-end cursor-pointer">
+            <li id="home" class="button-62"><a href="mainpage.html"><b>Home</b></a></li>
+            <li id="uploadimages" class="button-62"><a href="upload.html"><b>Upload Images</b></a></li>
+            <li id="personalpics"  class="button-62"><a href="personalpic.html"><b>Personal pics</b></a></li>
+            <li class="button-62"><button id="search" type="submit" ><b>Search</b></button></li>
+            <li id="contactus"  class="button-62"><a href="contact_us.html"><b>Contact Us</b></a></li>
+        </ul>
+        
+    </nav>
+    <br>
+    
+    <h1 align="center" class="font-bold text-3xl my-6 bg-rose-100"><u>Welcome to your MINI-INSTA profile</u></h1>
+    <hr><hr><hr><hr><hr><hr><hr><br><br>
+    <div class="text-2xl justify-center font-semibold mx-96">
+        <h1 align="center" class="text-green-900 text-3xl font-extrabold">Profile Details:</h1><br>
+        <p class="mx-64 font-bold text-amber-900 bg-cyan-300" id="name_display"></p><br>
+        <p class="mx-64 font-bold text-amber-900 bg-cyan-300" id="address_display"></p><br>
+        <p class="mx-64 font-bold text-amber-900 bg-cyan-300" id="email_display"></p><br>
+    </div><hr><hr><hr><hr><hr><hr><br>
+    <div class="mx-6">
+        <button type="submit" class=" bg-red-500 mx-10 font-semibold text-white text-xl btn btn-danger" id="change_name">Change_name</button><br><br><br><br>
+        <button type="submit" class=" bg-red-500 mx-10 font-semibold text-white text-xl btn btn-danger" id="change_address" >Change_address</button>
+        <input class="mx-56" type="file" id="profile"><br><br><br>
+        <button type="submit" class=" bg-red-500 mx-10 font-semibold text-white text-xl btn btn-danger" id="upload_profile" >Upload Profile Image</button>
+    </div><br><hr><hr><hr><hr><hr><hr>
+    <div class="text-left mx-96">
+        <form onsubmit="logout()">
+            <input id= "log_out" type="submit" value="Log Out" class="my-10 mx-96 font-medium text-xl btn btn-warning bg-pink-900">
+        </form>
+    </div>
+    <footer class="my-19">
+        <section id="contact" class="commonmargin">
+             <h1 class="section-heading mb75px" style="text-align: center;">
+                 <span>
+                     <i class="fa-solid fa-id-card" style="color:white;"></i>                
+                 </span>
+                 <span style="color:white;font-weight:900;font-size:xx-large;">CONTACT</span>
+             </h1>
+             <div id="contact-body">
+    
+                 <div id="contact-section">
+                     <div id="contact-form">
+                         <form action="">
+                          
+                          <input type="text" name="Name" id="Name" placeholder="YourName">
+                         
+                          <input type="email" name="email" id="email" placeholder="YourEmail">
+                          <input type="text" name="message" id="message" placeholder="Message">
+                          <button type="submit" style="color:white" class="btn btn-danger"> Send Message
+                
+                          </button>
+                          
+                         </form>
+      
+                      </div>
+                 </div>
+                 <div id="contact-section">
+                     <div id="contact-address">
+                  
+                         <h2 style="color:white;font-weight:700 ;font-size:40px; margin-top:20%;">
+                             Get In touch
+                         </h2>
+                         
+                         <table>
+                             <tr>
+                                 <td>
+                                     <i class="fa-solid fa-location-dot"><b style="text-transform:lowercase;color:white; font-size: larger;" >
+                                         New Delhi, &nbsp;India
+                                     </b></i>
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td>
+                                     <i class="fa-solid fa-mobile-screen-button"><b style="text-transform:lowercase;color:white;font-size: larger;" >
+                                         9999999999
+                                     </b></i>
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td>
+                                     <i class="fa-solid fa-envelope" ><b style="text-transform:lowercase;color:white;font-size: larger;" >
+                                         uplift@gmail.com
+                                     </b></i>
+                                 </td>
+                             </tr>
+                         </table>
+                      
+                     </div>
+    
+                 </div>
+              </div>
+             <div id="contact-socialmedia">
+                    
+                 <div class="socialicons">
+    
+         
+                     <ul >
+                         <li>
+                             <a href="https://www.linkedin.com" target="_blank">
+                                 <img src="/images/linkedin.png" alt="linkedin">
+                             </a>
+                         </li>
+                         <li>
+                             <a href="https://fb.com" target="_blank">
+                                 <img src="images/fbicon.jpg" alt="fb">
+                             </a>
+                         </li>
+                         <li>
+                             <a href="https://www.twitter.com" class="codechef" target="_blank">
+                                 <img src="images/twitter2.png" alt="twitter">
+                             </a>
+                         </li>
+                         <li>
+                             <a href="www.instagram.com" class="leetcodeimage" target="_blank">
+                                 <img src="images/Instagram-logo-transparent-PNG.png" alt="instagram" >
+                             </a>
+                         </li>
+                         <li>
+                             <a href="www.youtube.com" target="_blank">
+                                 <img src="images/youtube.png" alt="youtube">
+                                 <!-- <i class="fa-brands fa-github"></i> -->
+                             </a>
+                         </li>
+         
+                     </ul>
+         
+                 </div>
+    
+             </div>
+          
+         </section>
+    
+        </footer>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js"></script>
+    <script>
+        const firebaseConfig = {
+        apiKey: "AIzaSyADdC0d_I8v66NqtOQ4J8TKuGkCxLKz8O8",
+        authDomain: "weather-3b315.firebaseapp.com",
+        databaseURL: "https://weather-3b315-default-rtdb.firebaseio.com",
+        projectId: "weather-3b315",
+        storageBucket: "weather-3b315.appspot.com",
+        messagingSenderId: "750904442159",
+        appId: "1:750904442159:web:9cc320381068eb17ca35da"
+    };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+  
+    </script>
+    <script src="profile.js"></script>
+    </body>
+</html>
+    
